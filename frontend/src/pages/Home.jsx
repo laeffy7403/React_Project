@@ -25,6 +25,7 @@ function Home() {
     loadPopularMovies();
   }, []);
 
+
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!searchQuery.trim()) return
@@ -42,6 +43,7 @@ function Home() {
         setLoading(false)
     }
   };
+  
 
   return (
     <div className="home">
